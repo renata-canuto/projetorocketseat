@@ -1,0 +1,106 @@
+/*Peguei o link onde diz que tem a regra para CSS no Google Fonts e vou olhar onde tem estilo diferente que vai ser necessário aplicar esse estilo*/
+/*Tem na tag h1,p e a*/
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+/*Para alinhar o texto*/
+    text-align: center;
+
+    margin: 0;
+}
+
+/*Na tag id hero, os elementos estão alinhados verticalmente e possuem 592 de largura, o id no CSS é #*/
+
+#hero {
+    /*largura*/
+    width: 592px;
+    /*margem na página toda e voltar ele para o alinhamento central da pag*/
+    /*Colocar o "auto" faz com que ele mesmo tente alinhar a página no meio sozinho*/
+
+    /*O primeiro (0) é para a margem do topo, o segundo (auto) é p margens laterais e o terceiro (72px) é para a margem inferior*/
+    margin: 0 auto 72px;
+
+    
+}
+
+/*Aplicando espaçamentos*/
+#hero img {
+    /*Margin-bottom é a margem inferior*/
+    margin-bottom: 72px;
+}
+
+
+
+h1 {
+    font-family: 'Inter', sans-serif;
+    /*Tamanho da fonte*/
+    font-size: 49px;
+    /*Altura da linha*/
+    line-height: 56px;
+    /*Peso da fonte: negrito, normal, fino*/
+    font-weight: normal;
+
+
+    margin-bottom: 32px;
+}
+/*A palavra "únicos" precisa ser em negrito*/
+
+h1 span {
+    font-weight: bold;
+}
+
+/*Para colocar a cor é onde tem o span*/
+
+span, a {
+   color: #FF9900;
+}
+
+p, #footer {
+    color: #7D7987;
+
+    /*Tamanho da fonte*/
+    font-size: 14px;
+    /*Altura da linha*/
+    line-height: 28px;
+}
+
+
+/*Aula 05: Alinhando textos e elementos*/
+/*Aula 06: Mais ajustes de textos*/
+/*Aula 07: Trabalhando com espaçamentos*/
+
+
+/*Precisamos dar espaçamento entre o "Instagram" e o "Fale Conosco"*/
+
+
+#footer a + a {
+    /*o a + a significa que eu quero que pegue somente o a que anterior a ele tem outro a*/
+    margin-left: 28px;
+}
+
+/*Aula 08: Bordas e classificações de elementos*/
+/*Personalizando a linha que eu coloquei no HTML*/
+
+
+#footer #line {
+    /*Colocando uma largura na linha*/
+    width: 568px;
+    /*Alinhando a linha*/
+    margin: 0 auto 8px;
+    /*Altura da linha*/
+    height: 0px;
+    /*Borda da linha. O solid quer dizer a "aparência" da linha, tem outros formatos que a linha fica pontilhada, etc*/
+    border: 1px solid #ECEFF2;
+}
+
+/*Aula 09: Posicionando elementos*/
+#balls {
+    /*Posicionamento das bolinhas*/
+    position: fixed;
+    /*Colocando ele lá pra baixo*/
+    bottom: 0px;
+    /*Colocando ele pra direita*/
+    right: 0px;
+
+}
